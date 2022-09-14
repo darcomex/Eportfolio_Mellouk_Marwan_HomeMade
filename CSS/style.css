@@ -1,0 +1,754 @@
+/*  Insertion du fond de la page */
+body
+{   
+    background-image: url("../Images/FOND_SITE.jpg");
+}
+
+/*  Changement de couleur pour tous les titre h1 h2 h3 */
+h1,h2,h3
+{
+    color: rgb(255, 255, 255);
+}
+/* bloc qui permets de reguler la taille des bloque de la pages  */
+#page_global
+{
+    border:0px solid white;
+    width: 80%;
+    margin:0 auto 0 auto;
+}
+/*  Bloc qui permets de de reunir tous les trois bloc de la pages d'accueil Formation(BlocF) Loisir(BlocS) A propos(BlocT) */
+.BlocCenter
+{
+    border: 0px solid rgb(255, 255, 255);
+    margin-top: 10%;
+    margin-left: -8%;
+    width: 115%;
+    padding: 10px;
+    border-radius: 10px;
+}
+/* Bloc des information */
+.BlocF
+{
+    width: 30%;
+    height: 11em;
+    border: 0px solid rgb(255, 255, 255);
+    display: inline-block;
+    vertical-align: middle;
+    padding: 10px;
+    background: #131313;
+}
+/*  Bloc des Loisir */
+.BlocS
+{
+    width: 30%;
+    height: 11em;
+    border: 0px solid rgb(255, 255, 255);
+    display: inline-block;
+    vertical-align: middle;
+    padding: 10px;
+    background: #131313;
+}
+/*  Bloc A propos */
+.BlocT
+{
+    width: 30%;
+    height: 11em;
+    border: 0px solid rgb(255, 255, 255);
+    display: inline-block;
+    vertical-align: middle;
+    padding: 10px;
+    background: #131313;
+}
+/* Banderole de la page */
+header
+{
+	border: 0px solid rgb(255, 255, 255);
+	width: 80%;
+    height: 7.4em;
+    max-height: 10%;
+    margin-left: 10%;
+    background: linear-gradient(rgb(0, 0, 0), rgba(155, 164, 173, 0.479))
+}
+
+.sousTitre
+{
+    color: rgb(255,255,255);
+}
+/* Class pour changer la police en gras du texte */
+.TXTBold
+{
+    font-weight: bold;
+}
+
+#logo /* BLoc du logo Eporfoliot */
+{
+    float:left;
+    width: 30%;
+}
+#image_tete /* changement de la taille de l'image  */
+{
+    width: 50%;
+}
+#FichePresent /* bloc du nom et du statut d'étudiant  */
+{
+    border: 0px solid white;
+    margin-top: 6%;
+    padding: 15px;
+    border-radius: 40px;
+}
+#nom /* bloc du nom et du statut d'étudiant  */
+{
+    border: 0px solid white;
+    margin-left: 5%;
+    margin-top: 2%;
+    text-align: center;
+    width: 20%;
+    border-radius: 10px;
+    background: #131313;
+}
+
+#image_present /* Photo etudiant bien sur lui */
+{
+    margin-left: 8%;
+    margin-top: -4%;
+    width: 15%;
+    border-radius: 35px;
+}
+
+#IMGProgPythonGena /* Image de presentation du projets genealogique python */
+{
+    margin-left: 0%;
+    margin-top: 1%;
+    width: 60%;
+    border-radius: 10px;
+    border:2px solid rgb(255, 219, 102); ;
+}
+
+#IMGProgPythonAppVente /* Image de presentation du projets application de vente en python */
+{
+    margin-left: 0%;
+    margin-top: 1%;
+    width: 60%;
+    border-radius: 10px;
+    border:2px solid rgb(255, 219, 102); ;
+}
+
+#IMGProgSQLDBase /* Image de presentation du projets genealogique SQL */
+{
+    margin-left: 0%;
+    margin-top: 1%;
+    width: 60%;
+    border-radius: 10px;
+    border:2px solid rgb(255, 219, 102); ;
+}
+/* Bloc de presentation rapide du site cv */
+#txt_present 
+{
+
+    border : 0px solid white;
+    color:rgb(255, 255, 255);
+    width: 50%;
+    border-radius: 10px;
+    margin: -5% 0 0 40%;
+    padding: 10px;
+    background: #131313;
+
+
+}
+nav /* bloc au centre de la page*/
+{
+    margin-left: 15%;
+}
+.center /*  Class pour centrer les titres/text*/
+{
+    text-align: center;
+}
+.PTxtTab /* Changement de couleur du texte dans le tableau FORMATION*/
+{
+    color:rgb(255, 219, 102);
+
+}
+li /* Positionnement de la navbar */
+{
+    display: block;
+    width: 50%;
+    border : 0px solid black;
+    margin-right: auto;
+
+}
+/* texte de presentation rapide dans le bloc txt_present */
+#txt_accueil
+{
+    text-align: center;
+    color: rgb(255, 219, 102);
+}
+
+/* Texte loisir intro page boxe */ 
+#txt_1_loisir
+{
+
+    border : 1px solid black;
+    background: #131313;
+    color:rgb(255, 255, 255);
+    width: 50%;
+    border-radius: 10px;
+    margin: -8% 0 0 40%;
+    padding-inline: 16px;
+    animation-duration: 2s;
+    animation-name: glissement_HxH;
+ 
+}
+/* Texte loisir intro page programmation */ 
+#txt_2_loisir
+{
+
+    border : 1px solid black;
+    background: #131313;
+    color: rgb(255, 219, 102);
+    width: 50%;
+    border-radius: 10px;
+    margin: 0 0 0 40%;
+    padding-inline: 16px;
+    animation-duration: 2s;
+    animation-name: glissement_OP;
+ 
+}
+/* Texte loisir intro page Trading */ 
+#txt_3_loisir
+{
+
+    border : 1px solid black;
+    background: #131313;
+    color: rgb(255, 219, 102);
+    width: 50%;
+    border-radius: 10px;
+    margin: 0 0 0 40%;
+    padding-inline: 16px;
+    animation-duration: 2s;
+    animation-name: glissement_NRT;
+ 
+}
+/* Texte formation info bac general */ 
+#txt_1_formation
+{
+    
+    border : 1px solid black;
+    background: #131313;
+    color: rgb(255, 219, 102);
+    width: 50%;
+    border-radius: 10px;
+    margin: 15% 0 0 50%; 
+    padding-inline: 16px;
+
+
+}
+/* Texte formation info gerant hotel */ 
+#txt_Formation
+{
+    
+    border : 1px solid black;
+    background: #131313;
+    color: rgb(255, 219, 102);
+    width: 50%;
+    border-radius: 10px;
+    margin: 0 0 0 50%; 
+    padding-inline: 16px;
+
+
+}
+/* Texte losir utliser pour le premier paragraphe des pages loisir_boxe loisir_programmation et loisir_trading */ 
+#txt_1Loisir
+{
+
+    border : 1px solid black;
+    background: #131313;
+    color: rgb(255, 219, 102);
+    width: 75%;
+    border-radius: 10px;
+    margin: 15% 0 0 20%;
+    padding-inline: 16px;
+    animation-duration: 2s;
+    animation-name: glissement;
+
+}
+/* Texte losir utliser pour le deuxieme paragraphe des pages loisir_boxe loisir_programmation et loisir_trading */ 
+#txt_2Loisir
+{
+
+    border : 1px solid black;
+    background: #131313;
+    color: rgb(255, 219, 102);
+    width:75%;
+    border-radius: 10px;
+    margin:0 0 0 20%;
+    padding-inline: 16px;
+    animation-duration: 2s;
+    animation-name: glissement_3;
+}
+
+/* Texte losir utliser pour le premier paragraphe des pages loisir_boxe loisir_programmation et loisir_trading */ 
+#txt_3Loisir
+{
+    border : 1px solid black;
+    background: #131313;
+    color: rgb(255, 219, 102);
+    width:75%;
+    border-radius: 10px;
+    margin:0 0 0 20%;
+    padding-inline: 16px;
+    animation-duration: 2s;
+    animation-name: glissement_2;
+  
+}
+/* Alignement des titres des paragraphe des blocs de la pages loisir */
+.titre_txt
+{
+
+    text-align: center;
+
+}
+
+/* Animation de la navbar */
+nav
+{
+    clear: both;
+    border: 0px solid black;
+    animation-name: glissement_band;
+    animation-duration: 1s;
+
+}
+
+/* Alignement de la navbar */ 
+nav ul
+{
+    border: 0px solid red;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+/* Gestion de la taille des bloc de la navbar donner acces au pages */
+nav li
+{
+    border: 0px solid rgb(255, 255, 255);
+    float: left;
+    width: 20%;
+    height: inherit;/*héritage des caractéristique des éléments parents*/
+}
+/* gestion des caracteristique de l'hypertext permettant d'acceder au differente pages  */
+nav li a
+{
+    display: block;
+    text-decoration: none;
+    background-color: #131313;
+    color: rgba(255, 247, 247, 0.534);
+    height: inherit;
+    line-height: 200%; /*saisir le même nombre de pixel que la hauteur de l'élément pour centrer verticalement*/
+} /*l'élément a est un élément in-line cad ne prend pas la totalité de l'élément parent*/
+
+nav ul li ul
+{
+    display: none;
+    width:166.6%;
+}
+/* Effet lorsque que l'on passe sur le liens hypertext qui montre a l'utilisateur ce qu'il selectionne */
+nav ul li a:hover
+{
+    color:rgb(255, 255, 255);
+    background-color:rgba(255, 255, 255, 0.336)
+}
+/* Permets d'afficher les sous hypertext de la pages loisir sur la navbar */
+nav ul li:hover ul
+{
+    display: block;
+    animation-duration: 1.1s;
+    animation-name: anim_band;
+}
+/* Gestion du bloc du carousel sur la pages loisir */
+#carouselExampleIndicators
+{
+  width: 36%;
+  height:25%;
+  justify-content: center;
+  margin: 5% 0 0 0%;  
+  border: 0px solid black;
+}
+
+/* Gestion du bloc du carousel sur la pages loisir*/
+.carousel-inner
+{
+  max-width: 524px;
+  max-height: 262px;
+  width: 100%;
+  height: 100%;
+  animation-duration: 2s;
+  animation-name: glissement_caroussel;
+}
+/* bloc global de la pages loisir_programmation*/
+#glob_prog
+{
+    border: 0px solid white;
+    border-radius: 10px;
+    padding: 15px;
+}
+/* bloc global de la pages cv_formation*/
+#global_forma
+{
+    border: 3px solid white;
+    height: 500px;
+}
+/* bloc global de la pages loisr_boxe*/
+#glob_boxe
+{
+    border: 0px solid white;
+    border-radius: 10px;
+    padding: 15px;
+}
+/* bloc global de la pages loisr_trading*/
+#glob_trading
+{   
+    border: 0px solid white;
+    border-radius: 10px;
+    padding: 15px;
+} 
+
+/* bloc pour la gestion du placement et de la taille du tableau present dans formation  */
+#tab_formation
+{
+    border: 0px solid white;
+    width: 40%;
+    margin-left: -2%;
+    margin-top: -30%;
+}
+
+table
+{
+    float: left;
+}  
+/* Gestion de la taille de l'image python dans le carouselle */
+#img_PYTHON
+{
+    width: 50%;
+}
+
+@keyframes glissement 
+{ /* animation de gauche jusqu'au milieu */
+    from 
+    {
+      margin-left: 75%;
+    }
+  
+    to {
+      margin:15% 0 0 20%;
+    }
+}
+@keyframes glissement_band 
+{/* animation de haut gauche vers le milieux haut pour la nav bar*/
+    from {
+      margin-left:75%;
+
+    }
+  
+    to {
+      margin: 0 0 0 15% ;
+    }
+}
+@keyframes glissement_2 
+{/*animation de gauche au milieu */
+    from {
+      margin-left:75%;
+
+    }
+  
+    to {
+      margin: 0 0 0 20% ;
+    }
+} 
+
+@keyframes glissement_3 
+{ /*animation de droite au milieux */
+    from {
+      margin-left:-30%;
+
+    }
+  
+    to {
+      margin: 0 0 0 20% ;
+    }
+} 
+
+@keyframes anim_band 
+{ /* animation secondaire pour loisir du bas vers le haut */
+    from {
+      margin:0 0 0 30%;
+
+    }
+  
+    to {
+      margin: 0 0 0 0;
+    }
+}
+@keyframes glissement_HxH
+{ /*animation de droite au milieux */
+    from {
+        margin:-5% 0 0 80%;
+
+    }
+  
+    to {
+        margin:-8% 0 0 40%;
+    }
+} 
+@keyframes glissement_OP 
+{ /*animation de droite au milieux */
+    from {
+      margin-left:-30%;
+
+    }
+  
+    to {
+        margin: 0 0 0 40%; ;
+    }
+}
+@keyframes glissement_NRT
+{ /*animation de droite au milieux */
+    from {
+      margin-left:100%;
+
+    }
+  
+    to {
+        margin: 0 0 0 40%; 
+    }
+}
+@keyframes glissement_caroussel 
+{ /*animation bas en haut du caroussel */
+    from {
+      margin-top:80%;
+
+    }
+  
+    to {
+        margin: 5% 0 0 0%;  
+    }
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+                                                            /* PARTIE FROMULAIRE CONTACT*/
+input[type=text], select, textarea 
+{
+width: 100%; 
+padding: 12px; 
+border: 1px solid #ccc; 
+border-radius: 4px; 
+box-sizing: border-box;
+margin-top: 6px; 
+margin-bottom: 16px; 
+background: #131313;
+color:white; 
+}
+
+input[type=email], select, textarea 
+{
+width: 100%; 
+padding: 12px; 
+border: 1px solid #ccc; 
+border-radius: 4px; 
+box-sizing: border-box;
+margin-top: 6px; 
+margin-bottom: 16px; 
+background: #131313;
+color:white; 
+}
+
+/* config du bouton envoyer*/
+input[type=submit] {
+background-color: #3b3d3c;
+color: white;
+padding: 12px 20px;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+}
+
+/* Changement de couleur en passant sur le bouton d'envoie*/
+input[type=submit]:hover 
+{
+background-color: #292929;
+}
+
+/* ajout des parametre dans la div principal couleur et padding*/
+.container 
+{
+border-radius: 5px;
+background-color: #636363;
+background: #131313;
+padding: 20px;
+width: 50%;
+margin-top: 10%;
+}
+.TitleInput
+{
+color: white;
+}                                                          
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+                                                            /* PARTIE COMPETENCE ACCUEIL*/
+
+/*STYLES GENERAUX*/
+.BoxeCompetence
+{
+    font-family: Avenir, sans-serif;
+    padding: 0px;
+    margin: 0px;
+    text-align: justify;
+    box-sizing: border-box;
+}
+/* Gestion du texte de paragraphe des competence */
+.PCompetence
+{
+    font-size: 100%;
+    line-height: 150%;
+    color: rgb(255, 219, 102);
+}
+/* Gestion des pourcentage d'avancer des competences */
+.Pavance
+{
+    font-size: 100%;
+    line-height: 150%;
+    color: rgb(255, 255, 255);   
+}
+/* Gestion global du bloc de compétence  */
+#comp
+{
+    width: 25%;
+    margin: 5% 0 0 38%;
+    background: #131313;
+    display: flex; 
+    flex-flow: row wrap;
+    justify-content: center;
+    padding-bottom: 20px;
+    box-shadow: 0px 0px 15px rgb(0, 0, 0);
+    border: 0px solid rgb(255, 250, 250);
+}
+/*HEADER & FOOTER*/
+
+/* Alignement du texte present dans les competence*/
+.center
+{
+    text-align: center;
+}
+
+/*gestion de la taille du bloc contenant les thématiques*/
+.size
+{
+    width: 90%;
+}
+/*gestion de la taille du bloc contenant les Titre des competences*/
+.SecondSize
+{
+    margin: 20px 0;
+    width: 90%;
+}
+/* Gestion du texte h3 dans les competences */
+.h3centre
+{
+    width: 90%;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+/* class qui permets la gestion des paragraphe et jauge premier de competence du bloc */
+.comp
+{
+    display:flex;
+    flex-flow: row wrap;
+    margin-bottom: 2.5%;
+}
+/* class qui permets la gestion des paragraphe et jauge second de competence du bloc */
+.comp2
+{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+
+/* parametre qui focus le paragraphe present dans le bloc contenant la class camp, permets de changer la taille que le texte occuper dans le bloc  */
+.comp p
+{
+    flex: 0 0 40%;
+}
+
+/* Conteneur des jauges de pourcentage des capacités premiere */
+.conteneur-barre
+{
+    flex: 0 0 60%;
+    border-radius: 5px;
+    background-color: grey;
+    border-bottom: 1px ridge grey;
+}
+/* Conteneur des jauges de pourcentage des capacités seconde */
+.conteneur-barre2
+{
+    flex: 0 0 100%;
+    height: 25%;
+    margin-bottom: 5%;
+    border-radius: 5px;
+    background-color: grey;
+}
+/* Ligne remplissant les jauges completer des class en dessous permettant de choisir le pourcentage */
+.ligne
+{
+    display: block;
+    height: 100%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+/* Barre remplie a 50% */
+.p50
+{
+    width: 50%;
+    background-color: rgb(197, 197, 197);
+    border-radius: 5px;
+}
+/* Barre remplie a 50% */
+.p70
+{
+    width: 70%;
+    background-color: rgb(218, 218, 218);
+    border-radius: 5px;
+}
+/* Barre remplie a 50% */
+.p75
+{
+    width: 75%;
+    background-color: rgb(221, 221, 221);
+    border-radius: 5px;
+}
+/* Barre remplie a 50% */
+.p85
+{
+    width: 85%;
+    background-color: rgb(255, 255, 255);
+}
+/* Barre remplie a 50% */
+.p90
+{
+    width: 90%;
+    background-color: rgb(255, 255, 255);
+}
+/* Barre remplie a 50% */
+.p95
+{
+    width: 95%;
+    background-color: rgb(255, 255, 255);
+}
+/* Barre remplie a 50% */
+.p100
+{
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+}
+
